@@ -27,12 +27,7 @@ const unionItems = (
     endPx: number;
   }[]
 ) => {
-  // Ensure each interval is valid by swapping start and end if end < start
-  items.forEach((interval) => {
-    if (interval.endPx < interval.startPx) {
-      [interval.startPx, interval.endPx] = [interval.endPx, interval.startPx];
-    }
-  });
+  items = items.filter((item) => item.endPx >= item.startPx);
 
   items.sort((a, b) => a.startPx - b.startPx);
   let result: {
