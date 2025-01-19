@@ -1,12 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Provider } from "react-redux";
 import store from "./app/store";
-import { Flex, Layout, Typography } from "antd";
-import { Content, Header } from "antd/es/layout/layout";
-import UserSearch from "./components/search";
+import { Typography } from "antd";
+import { Content } from "antd/es/layout/layout";
+import { UserSearch } from "./components/search";
+import React from "react";
 
 function App() {
   return (

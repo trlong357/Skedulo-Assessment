@@ -9,7 +9,7 @@ const { Search } = Input;
 
 import "./styles.css";
 
-const UserSearch: React.FC = () => {
+export const UserSearch: React.FC = () => {
   const [query, setQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(10);
@@ -74,5 +74,3 @@ const UserSearch: React.FC = () => {
     </div>
   );
 };
-
-export default UserSearch;
